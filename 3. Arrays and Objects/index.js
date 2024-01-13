@@ -144,5 +144,5 @@ var {
 } = IT114L;
 
 console.log(courseCodeAndUnits);
-console.log(IT114L);
+//console.log(IT114L);
 
