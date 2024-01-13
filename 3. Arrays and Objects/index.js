@@ -62,8 +62,10 @@ console.log(IT114L.professor_name);
 
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term
 // Your code here
-// let current_courses = [CS107, CS107L, IT114, IT114L, IT133, PE044]
+
 let currentCourses = new Array();
+
+// My courses: CS107, CS107L, IT114, IT114L (object already exists), IT133, PE044
 
 let CS107 = {
     course_code: "CS107",
@@ -72,18 +74,75 @@ let CS107 = {
     student_count: 38
 }
 
-currentCourses.push(new Object(CS107));
+let CS107L = {
+    course_code: "CS107L",
+    course_name: "Information Management (Laboratory)",
+    units: 1,
+    student_count: 35
+}
 
-console.log(currentCourses[0].course_name);
+let IT114 = {
+    course_code: "IT114",
+    course_name: "Web Systems and Technologies",
+    units: 2,
+    student_count: 41
+}
+
+let IT133 = {
+    course_code: "IT113",
+    course_name: "Technopreneurship",
+    units: 3,
+    student_count: 28
+}
+
+let PE044 = {
+    course_code: "PE044",
+    course_name: "PATHFIT 4: Individual/Dual Team Sports",
+    units: 2,
+    student_count: 35
+}
+
+currentCourses.push(new Object(CS107));
+currentCourses.push(new Object(CS107L));
+currentCourses.push(new Object(IT114));
+currentCourses.push(new Object(IT133));
+currentCourses.push(new Object(PE044));
+currentCourses.push(new Object(IT114L));
+
+//console.log(currentCourses[0].course_name);
+//console.log(currentCourses[1].course_name);
 
 // Todo 3.5 Calculate the total number of units you are taking this term using the array of objects.
 // Your code here
+var totalUnits = 0;
+for (let value of currentCourses){
+    totalUnits += value.units;
+}
+console.log("Total Units: ", totalUnits);
 
 // Checkpoint 3.2 What would be the equivalent of objects in python? How would you compare them?
-// Answer: 
+// Answer: Python's dictionaries function similarly to JS's objects, but are iterable.
 
 // Todo 3.6 Going back to the array of numbers, use the spread syntax to create a copy of the array with an additional number
 // Your code here
+console.log("[Spread syntax number array test]");
+var newArray = [...numbers, 97];
+console.log(...newArray);
 
 // Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
 // Your code here
+console.log("[Spread syntax course array test]");
+
+//var {course_code, units} = IT114L;
+//console.log(course_code, units);
+
+var {
+    course_name,
+    professor_name,
+    student_count,
+    ...courseCodeAndUnits
+} = IT114L;
+
+console.log(courseCodeAndUnits);
+console.log(IT114L);
+
