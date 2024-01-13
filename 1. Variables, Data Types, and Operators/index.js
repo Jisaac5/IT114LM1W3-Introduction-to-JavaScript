@@ -80,14 +80,82 @@ console.log(concatString);
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators
 // Your code here
 
+console.log("\n[Logical operator test]");
+
+//Logical AND test
+var andVar1 = false && true;
+console.log(andVar1);
+
+var andVar2 = true && false;
+console.log(andVar2);
+
+var andVar3 = true && "Bread";
+console.log(andVar3);
+
+var andVar4 = false && "Butter";
+console.log(andVar4);
+
+console.log();
+
+//Logical OR test
+var orVar1 = true || false;
+console.log(orVar1);
+
+var orVar2 = false || false;
+console.log(orVar2);
+
+var orVar3 = false || "Jam";
+console.log(orVar3);
+
+var orVar4 = true || "Cheese";
+console.log(orVar4);
+
+//Logical NOT test
+
+console.log();
+
+var notVar1 = !false;
+var notVar2 = !true;
+var notVar3 = !"Ham";
+
+console.log(notVar1,"\n",notVar2,"\n",notVar3);
+
 // Checkpoint 1.4 What operators did you use?
-// Answer: 
+// Answer: I used the logical AND(&&), logical OR(||), and logical NOT(!)
 
 
 // TODO 1.7 Try out the different relational operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
 
+console.log("\n[Relational operator test");
+
+const stuff = ["dirt", "stone", "bricks"];
+
+console.log(0 in stuff);
+console.log(2 in stuff);
+console.log(3 in stuff);
+console.log("stone" in stuff); 
+
+// built-in objects
+"PI" in Math; // returns true
+
+const myString = new String("fern");
+console.log('\n',"length" in myString);
+console.log("velocity" in myString);
+
+//Instanceof
+var woah = new String("WOAH");
+
+console.log("[Instanceof test]");
+console.log(woah instanceof String);
+console.log(woah instanceof Array);
+
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
 // Answer: 
 // Your code here
+
+console.log();
+console.log("[Checkpoint 1.5 testing]");
+
+console.log([] == false);
