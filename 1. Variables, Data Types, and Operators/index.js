@@ -19,12 +19,12 @@ let testVar2 = 2;
 
 // TODO 1.3 Use the const keyword to define a variable. Try reassigning the value of the variable. What happens?
 // Your code here
-const constVar = 3;
+const constVar = "stone";
 //constVar = 3.5;
 
 //Trying to reassign the const's value caused an error.
 
-console.log("Testing values for all 3 variables...");
+console.log("[Testing values for all 3 variables]");
 console.log("testVar = ", testVar);
 console.log("testVar2 = ", testVar2);
 console.log("constVar = ", constVar);
@@ -35,17 +35,46 @@ console.log("constVar = ", constVar);
 // TODO 1.4 Try out the different arithmetic operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators
 // Your code here
+console.log("\n[Arithmetic operator tests]")
+
+console.log("The remainder of dividing 10 by 3: ", 10%3);
+
+var incrementVar = 1;
+console.log("Var before incrementing: ", incrementVar,"\nIncremented var: ", ++incrementVar);
+
+var decrementVar = 1;
+console.log("Var before decrementing: ", decrementVar,"\nDecremented var: ", ++decrementVar);
+
+//Note: Increment & decrement must be used as prefixes if they are to be used immediately
+
+var negateMe = 5;
+console.log("Var before negation: ", negateMe,"\nVar after negation: ", -negateMe);
+
+var numInQuotes = "6";
+console.log("3 + \"6\" string converted to a number: ", +numInQuotes+3);
+
+console.log("3 raised to 4 is: ", 3**4);
 
 // Checkpoint 1.2 What operators did you use?
-// Answer: 
+// Answer: I used the remainder(%), increment(++), decrement(--), unary negation(-), unary plus(+), and exponentiation(**)
 // Your code here
 
 // TODO 1.5 Try out the different string operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators
 // Your code here
 
+console.log("\n[String operator test]");
+console.log("Hello "+"World");
+
+var concatString = "Lorem";
+console.log(concatString);
+concatString += " ipsum";
+console.log(concatString);
+concatString += " dolor";
+console.log(concatString);
+
 // Checkpoint 1.3 What operators did you use?
-// Answer: 
+// Answer: I used the concatenation operator(+) in two ways.
 
 // TODO 1.6 Try out the different logical operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators
