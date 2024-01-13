@@ -6,17 +6,34 @@
     - freeCodeCamp on Arrays: https://www.freecodecamp.org/news/javascript-array-tutorial-array-methods-in-js/
 */
 
+// let numbers = [
+//     1, 89, 55, 63, 29, 19,
+//     15, 77, 62, 68, 29, 84,
+//     21, 26, 49
+// ];
+
 let numbers = [
     1, 89, 55, 63, 29, 19,
     15, 77, 62, 68, 29, 84,
     21, 26, 49
-];
+]; //for testing
 
 // Todo 3.1 Get the first, 5th, and last items in the numbers array.
 // Your code here
+console.log("1st value: ",numbers[0]);
+console.log("5th value: ", numbers[4]);
+console.log("Last value: ", numbers[numbers.length-1]);
+
 
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Your code here
+var min = numbers[0];
+for (let value of numbers){
+    if(value < min){
+        min = value;
+    }
+}
+console.log("Array minimum: ",min);
 
 // Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
 // Answer: 
