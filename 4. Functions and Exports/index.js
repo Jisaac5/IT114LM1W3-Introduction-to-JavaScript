@@ -72,8 +72,11 @@ console.log("Approximate value of pi:", approxPi);
 // Your code here
 import isPalindrome from './isPalindrome.js';
 
+isPalindrome("burgercat");
 isPalindrome("tacocat");
 
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
-// Answer: 
+// Answer: CommonJS' require function and module.export variable function similarly to ES' import and export keywords respectively.
+// ES (import and export) supports selective importing. Otherwise, CommonJS (require & module.export) & ES function mostly similarly aside from some quirks like
+// CommonJS being dynamic while ES being static (for the most part. It can also be made dynamic).

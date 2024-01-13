@@ -1,7 +1,7 @@
 // Todo 4.6a Create a funciton called isPalindrome function which checks if the given word is a palindrome
 // What is a Palindrome? See here: https://en.wikipedia.org/wiki/Palindrome. Feel free to search for the implementation
 function isPalindrome(word){
-    var wordSplit = word.split('');
+    // var wordSplit = word.split('');
     var reverseSplit = word.split('');
     reverseSplit.reverse();
     var reverseWord = "";
