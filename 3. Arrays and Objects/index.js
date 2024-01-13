@@ -35,17 +35,46 @@ for (let value of numbers){
 }
 console.log("Array minimum: ",min);
 
+var max = numbers[0];
+for (let value of numbers){
+    if(value > max){
+        max = value;
+    }
+}
+console.log("Array maximum: ",max);
+
 // Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
-// Answer: 
+// Answer: My experience with python is limited, but its lists and JavaScript's arrays seem to be similar in function
 
 // Todo 3.3 Declare an object with information about IT114L (course code, name, units, number of students)
 // Your code here
+var IT114L = {
+    course_code: "IT114L",
+    course_name: "Web Systems and Technologies (Laboratory)",
+    units: 1,
+    student_count: 38
+}
 
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 // Your code here
+IT114L.professor_name = "Job J. Lipat";
+console.log(IT114L.professor_name);
 
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term
 // Your code here
+// let current_courses = [CS107, CS107L, IT114, IT114L, IT133, PE044]
+let currentCourses = new Array();
+
+let CS107 = {
+    course_code: "CS107",
+    course_name: "Information Management",
+    units: 2,
+    student_count: 38
+}
+
+currentCourses.push(new Object(CS107));
+
+console.log(currentCourses[0].course_name);
 
 // Todo 3.5 Calculate the total number of units you are taking this term using the array of objects.
 // Your code here
