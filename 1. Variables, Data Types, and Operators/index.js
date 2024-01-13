@@ -152,8 +152,8 @@ console.log(woah instanceof Array);
 
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
-// Answer: It equates to true. This happens because JavaScript converts the empty array ([]) into a string to help complete the comparison as an array can't be used as is
-// in a comparison. Since the array is empty, its string form is also empty (""), leading to a "false" value in the comparison.
+// Answer: It equates to true. This happens because JavaScript converts the empty array ([]) into a string to complete the comparison.
+// Since the array is empty, its string form is also empty (""), leading to a "false" value in the comparison.
 
 // Your code here
 
