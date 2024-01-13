@@ -61,14 +61,18 @@ console.log(modifyArray(numbers, arrayInc));
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
-import {add, approxPi} from './mathUtils'
-console.log(add(2, 3));
+
+import {add, approxPi} from './mathUtils.js';
+console.log("2 + 3 =", add(2, 3));
 console.log("Approximate value of pi:", approxPi);
 
 // Todo 4.5 See isPalindrome.js for the instructions to create the isPalindrome method.
 // Then, import and call the isPalindrome method here
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
+import isPalindrome from './isPalindrome.js';
+
+isPalindrome("tacocat");
 
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
