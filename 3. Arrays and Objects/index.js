@@ -129,7 +129,7 @@ console.log("[Spread syntax number array test]");
 var newArray = [...numbers, 97];
 console.log(...newArray);
 
-// Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
+// Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator //Use deconstruction, not spread operator
 // Your code here
 console.log("[Spread syntax course array test]");
 
